@@ -1,1 +1,35 @@
-﻿<h1>CADASTRAR</h1>
+﻿<!-- o angular material design trabalha com a tecnica de web components, ele tem as 
+    suas proprias tags, elementos e seus proprios atributos -->
+
+    <md-content layout-padding class="autoScroll">
+        <md-input-container class="md-icon-float">
+            <!-- Use floating label instead of placeholder -->
+            <label>Nome</label>
+            <ng-md-icon icon="person" style="fill: blue" size="20"></ng-md-icon>
+            <input ng-model="nome" type="text" ng-required="true">
+        </md-input-container>
+
+        <md-input-container class="md-icon-float">
+            <!-- Use floating label instead of placeholder -->
+            <label>E-mail</label>
+            <ng-md-icon icon="email" style="fill: red" size="20"></ng-md-icon>
+            <input ng-model="email" type="email" ng-required="true">
+        </md-input-container>
+
+        <md-input-container class="md-icon-float">
+            <!-- Use floating label instead of placeholder -->
+            <label>Telefone</label>
+            <ng-md-icon icon="local_phone" style="fill: green" size="20"></ng-md-icon>
+            <input ng-model="telefone" type="tel" ng-required="true">
+        </md-input-container>
+
+        <md-input-container class="md-icon-float">
+            <!-- Use floating label instead of placeholder -->
+            <label>Nascimento</label>
+            <ng-md-icon icon="event" style="fill: orange" size="20"></ng-md-icon>
+            <input ng-model="nascimento" type="date" ng-required="true">
+        </md-input-container>
+        <md-input-container class="md-icon-float">
+            <md-button class="md-raised md-primary">Cadastrar</md-button>
+        </md-input-container>
+</md-content>
